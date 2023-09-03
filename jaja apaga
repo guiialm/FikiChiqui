@@ -1,0 +1,18 @@
+                <!-- INICIO MENU NAVEGACAO -->
+                <nav>
+                    <ul id="MenuItens">
+                        <li><a href="index.html" tittle="">Início</a></li>
+                        <li><a href="produtos.html" tittle="">Produtos</a></li>
+                        <li><a href="#" tittle="">Empresa</a></li>
+                        <li><a href="#" tittle="">Contatos</a></li>
+                        <li><a href="#" tittle="">Minha Conta</a></li>
+                    </ul>
+                </nav>
+                <!-- FIM MENU NAVEGACAO -->
+
+                <a href="carrinho.html"><img src="https://servidor-estatico-silk.vercel.app/carrinho.png" alt="" style="width: 30px; height: 30px;"></a>
+
+                <img src="https://servidor-estatico-silk.vercel.app/menu.png" alt="" class="menu-celular" onclick="menuCelular()">
+
+            </div>
+            <!-- FIM NAVEGACAO -->
