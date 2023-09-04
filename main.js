@@ -1,25 +1,44 @@
-var menuItem = document.querySelectorAll('.item-menu');
+class MobileNavbar {
+    constructor(mobileMenu, navList, navLinks) {
+        this.mobileMenu = document.querySelector(mobileMenu);
+        this.navList = document.querySelector(navList);
+        this.navLinks = document.querySelectorAll(navLinks);
+        this.activeClass = "active";
 
-function selectionLink() {
-    menuItem.forEach((item)=>
-        item.classList.remove('nav.menu-lateral')
+        this.handleClick = this.handleClick.bind(this);
+    }
 
-    )
-    this.classList.add('nav.menu-lateral')
+    animateLinks() {
+        this.navLinks.forEach((link, index) => {
+            link.style.animation
+            ? (link.style.animation = "")
+            : (link.style.animation = 'navLinkFade 0.5s ease forwards 0.3s')
+        });
+    }
+
+    handleClick() {
+        this.navList.classList.toggle(this.activeClass);
+        this.animateLinks();
+    }
+
+
+    addClickEvent() {
+        this.mobileMenu.addEventListener("click", this.handleClick);
+    }
+
+    init () {
+        if(this.mobileMenu) {
+            this.addClickEvent();
+        }
+        return this;
+    }
+
 }
 
-menuItem.forEach((item)=>
-    item.addEventListener('click', selectionLink)
-)
 
-// expandir o menu
-
-var btnExp = document.querySelector('#btn-exp');
-var menuSide = document.querySelector('.menu-lateral');
-
-btnExp.addEventListener('click', function(){
-    menuSide.classList.toggle('expandir')
-    menuSide.classList.toggle('seuPopoEhMeu')
-
-
-})
+const mobileNavbar = new MobileNavbar (
+    ".mobile-menu",
+    ".nav-list",
+    ".nav-list li"
+    );
+    mobileNavbar.init();
