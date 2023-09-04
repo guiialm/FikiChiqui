@@ -89,6 +89,10 @@ nav {
         
     }
 
+    nav a {
+        color: #000;
+    }
+
     .mobile-menu div {
         color: #000;
     }
