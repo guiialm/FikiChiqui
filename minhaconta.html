@@ -18,7 +18,7 @@
         <div class="container">
 
             <header>
-                <nav>
+                <nav >
                     
                     
                     <div class="mobile-menu">
@@ -35,16 +35,10 @@
                         </a>
                         <li><a href="#"></a>Empresa</li>
                         <li><a href="#"></a>Contato</li>
-<<<<<<< HEAD
-
-=======
                         <a href="minhaconta.html">
                             <li>Conta</li>
                         </a>
-                        <a href="carrinho.html">
-                            <li>Carrinho</li>
-                        </a>
->>>>>>> 530770a9448a65beb07c5d64c6b8cf1538133f02
+                        <li><a href="carrinho.html"><img src="assets/img/carrinho.png" style="width: 32px; height: 24px;" alt=""></a></li>
                     </ul>
                 </nav>
             </header> 
@@ -61,129 +55,57 @@
     </div>
     <!-- FIM CONTAINER -->
 
-    <a href="index.html"><img style="width: 150px;" src="assets/img/fiklogo.png" alt=""></a>
+    <a href="index.html"><img style="width: 150px; margin-top: 20px;" src="assets/img/fiklogo.png" alt=""></a>
     <div class="linha">
 
 
     </div>
     <!-- FIM BANNER FIKCHIQUI -->
 
-                        <!-- INICIO CARRINHO DE COMPRAS -->
-                        <div class="corpo-categorias carrinho-compras">
+    <!-- INICIO MINHA CONTA -->
+    <div class="minha-conta">
 
-                            
+        <div class="container">
+            <div class="linha">
 
-        
-                            <!-- INICIO TABELA DO CARRINHO -->
-                            <table>
-                                <tr>
-                                    <th>Produto</th>
-                                    <th>Quantidade</th>
-                                    <th>Valor</th>
-                                </tr>
+                <div class="col-2">
 
-                                    <!-- INICIO ITEM CARRINHO 1-->
-                                <tr>
-                                    <td>
-                                        <div class="info-carrinho">
-                                            <img src="assets/img/carrinho-1.jpg" alt="">
+                    <img src="assets/img/banner-1.png" alt="banner" width="100%">
 
-                                            <div>
-                                                <p>Relógio</p>
-                                                <small>Valor: R$ 777</small>
-                                                <br>
-                                                <a href="#">Remover</a>
-                                            </div>
-                                        </div>
-                                    </td>
-                                    <td>
-                                        <form action="" method="post">
-                                            <input type="number" name="" id="" value="1">
-                                        </form>
-                                    </td>
-                                    <td>R$ 777</td>
-                                </tr>
-                                    <!-- FIM ITEM CARRINHO 1-->
+                </div>
 
-                                    <!-- INICIO ITEM CARRINHO 2-->
-                                <tr>
-                                    <td>
-                                        <div class="info-carrinho">
-                                            <img src="assets/img/carrinho-2.jpg" alt="">
+                <div class="col-2">
+                    <div class="formulario"> 
 
-                                            <div>
-                                                <p>Relógio</p>
-                                                <small>Valor: R$ 777</small>
-                                                <br>
-                                                <a href="#">Remover</a>
-                                            </div>
-                                        </div>
-                                    </td>
-                                    <td>
-                                        <form action="" method="post">
-                                            <input type="number" name="" id="" value="1">
-                                        </form>
-                                    </td>
-                                    <td>R$ 777</td>
-                                </tr>
-                                    <!-- FIM ITEM CARRINHO 2-->
+                        <div class="btn-form">
+                            <span onclick="Entrar()">Entrar</span>
+                            <span onclick="Cadastro()">Cadastro</span>
+                            <hr id="Indicador">
+                        </div>
 
-                                    <!-- INICIO ITEM CARRINHO3 -->
-                                <tr>
-                                    <td>
-                                        <div class="info-carrinho">
-                                            <img src="assets/img/carrinho-3.jpg" alt="">
+                        <form action="" method="post" id="EntrarPainel">
+                            <input type="email" name="email" id="" placeholder="E-mail de acesso">
+                            <input type="password" name="senha" id="" placeholder="Digite sua senha">
+                            <button type="submit" name="sendEntrar" class="btn">Entrar</button>
+                            <a href="" title="">Esqueceu sua senha?</a>
+                        </form>
 
-                                            <div>
-                                                <p>Relógio</p>
-                                                <small>Valor: R$ 777</small>
-                                                <br>
-                                                <a href="#">Remover</a>
-                                            </div>
-                                        </div>
-                                    </td>
-                                    <td>
-                                        <form action="" method="post">
-                                            <input type="number" name="" id="" value="1">
-                                        </form>
-                                    </td>
-                                    <td>R$ 777</td>
-                                </tr>
-                                    <!-- FIM ITEM CARRINHO 3-->
+                        <form action="" method="post" id="CadastroSite">
+                            <input type="text" name="nome" id="" placeholder="Nome completo">
+                            <input type="email" name="email" id="" placeholder="E-mail de acesso">
+                            <input type="text" name="senha" id="" placeholder="Digite sua senha">
+                            <button type="submit" name="sendCadastro" class="btn">Cadastre-se</button>
+                        </form>
+
+                    </div>
+                </div>
 
 
+            </div>
+        </div>
 
-                            </table>
-
-
-
-                            <!-- FIM TABELA DO CARRINHO -->
-
-                            <!-- INICIO VALOR TOTAL DO CARRINHO DE COMPRAS  -->
-                            <div class="valor-total">
-                                <table>
-                                    <tr>
-                                        <td>sub-total</td>
-                                        <td>R$ 700</td>
-                                    </tr>
-
-                                    <tr>
-                                        <td>Frete</td>
-                                        <td>R$ 77</td>
-                                    </tr>
-
-                                    <tr>
-                                        <td>Total</td>
-                                        <td>R$ 777</td>
-                                    </tr>
-                                </table>
-                            </div>
-                            <!-- FIM VALOR TOTAL DO CARRINHO DE COMPRAS  -->
-
-
-
-                            </div>
-                        <!-- FIM CARRINHO DE COMPRAS -->
+    </div>
+                        <!-- FIM MINHA CONTA -->
 
 
 
@@ -261,6 +183,6 @@
 <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
 <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
 <script src="main.js"></script>
-<script src="assets/js/app.js"></script>
+<script src="assets/js/login.js"></script>
 </body>
 </html>
